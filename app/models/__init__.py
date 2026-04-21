@@ -1,0 +1,15 @@
+from app.models.account import AccountPublic, AccountPublicWithPosts, AccountPublicWithComments, AccountPublicWithPostsAndComments
+from app.models.post import PostPublic, PostPublicWithAccount, PostPublicWithComments, PostPublicWithAccountAndComments
+from app.models.comment import CommentPublic, CommentPublicWithAccount, CommentPublicWithPost, CommentPublicWithAccountAndPost
+
+AccountPublicWithPosts.model_rebuild()
+AccountPublicWithComments.model_rebuild()
+AccountPublicWithPostsAndComments.model_rebuild()
+
+PostPublicWithAccount.model_rebuild()
+PostPublicWithComments.model_rebuild()
+PostPublicWithAccountAndComments.model_rebuild()
+
+CommentPublicWithAccount.model_rebuild()
+CommentPublicWithPost.model_rebuild()
+CommentPublicWithAccountAndPost.model_rebuild()
